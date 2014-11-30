@@ -9,3 +9,10 @@ Intern.
     * `"folder_exclude_patterns": [".tmp", ".sass-cache", "bower_components", "node_modules", "dist"]`
 + `npm install`
 + `bower install`
+
+
+
+## TODO:
++ Replace Karma by Intern
++ Configure Travis
++ Remove unrequired angular modules
