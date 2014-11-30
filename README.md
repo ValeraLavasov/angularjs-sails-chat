@@ -1,2 +1,2 @@
-angularjs-project-template
+Angularjs project template
 ==========================
