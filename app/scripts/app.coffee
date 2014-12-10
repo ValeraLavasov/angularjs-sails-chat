@@ -19,7 +19,8 @@ class App extends App
       'ui.router',
       'ngSanitize',
       'ngTouch',
-      'restangular'
+      'restangular',
+      'ngSails'
     ]
 
 
@@ -98,3 +99,8 @@ class RestangularConfiguration extends Config
 #       httpConfig: httpConfig
 
 #     return
+
+
+class SailsConfig extends Config 
+  constructor: ($sailsProvider)->
+    $sailsProvider.url = 'http://0.0.0.0:1337/'
