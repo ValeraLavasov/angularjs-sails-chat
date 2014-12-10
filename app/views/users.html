@@ -1,6 +1,7 @@
 <h2>Users:</h2>
-<div ng-controller="restdemoController">
-	<ul ng-repeat="user in users" >
-		<li> {{user.name}} </li>
+<div ng-controller="restdemoController as ctrl">
+	<ul ng-repeat="user in ctrl.users" >
+		<li> {{ user.name }} </li>
 	</ul> 
 </div>
+
