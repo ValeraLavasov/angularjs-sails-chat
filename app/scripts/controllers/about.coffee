@@ -10,4 +10,8 @@
 
 class About extends Controller 
 	constructor: ->
-		@info = 'Some info about us'
+		@info = 
+		"""
+		What is used here:
+
+		"""

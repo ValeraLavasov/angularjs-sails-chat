@@ -18,7 +18,8 @@ class App extends App
       'ngResource', 
       'ui.router',
       'ngSanitize',
-      'ngTouch'
+      'ngTouch',
+      'restangular'
     ]
 
 
