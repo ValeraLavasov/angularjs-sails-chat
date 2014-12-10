@@ -15,7 +15,7 @@ class App extends App
     return [
       'ngAnimate',
       'ngCookies',
-      'ngResource',
+      'ngResource', 
       'ngRoute',
       'ngSanitize',
       'ngTouch'
@@ -24,7 +24,7 @@ class App extends App
 
 class Routes extends Config
   constructor: ($routeProvider) ->
-    $routeProvider
+    $routeProvider 
     .when '/',
       controller: 'MainCtrl'
       templateUrl: 'views/main.html'

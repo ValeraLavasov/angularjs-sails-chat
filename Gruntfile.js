@@ -37,8 +37,8 @@ module.exports = function (grunt) {
         tasks: ['ngClassify', 'newer:coffee:dist']
       },
       coffeeTest: {
-        files: ['test/spec/{,*/}*.{coffee,litcoffee,coffee.md}'],
-        tasks: ['ngClassify', 'newer:coffee:test', 'karma']
+        files: ['<%= yeoman.app %>/scripts/{,*/}*.{coffee,litcoffee,coffee.md}'],
+        tasks: ['newer:ngClassify', 'newer:coffee:test', 'karma']
       },
       compass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
