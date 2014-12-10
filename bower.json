@@ -11,8 +11,10 @@
     "angular-sanitize": "~1.2.0",
     "angular-animate": "~1.2.0",
     "angular-touch": "~1.2.0",
-    "angular-route": "~1.2.0",
-    "angular-ui":"^*"
+    "restangular": "1.4.0",
+    "angular-sails": "^*",
+    "angular-ui-router": "^*",
+    "angular-bootstrap": "^*"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.0",
