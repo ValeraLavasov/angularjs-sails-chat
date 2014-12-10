@@ -16,20 +16,23 @@ class App extends App
       'ngAnimate',
       'ngCookies',
       'ngResource', 
-      'ngRoute',
+      'ui.router',
       'ngSanitize',
       'ngTouch'
     ]
 
 
 class Routes extends Config
-  constructor: ($routeProvider) ->
-    $routeProvider 
-    .when '/',
-      controller: 'MainCtrl'
-      templateUrl: 'views/main.html'
-    .when '/about',
-      controller: 'AboutCtrl'
-      templateUrl: 'views/about.html'
-    .otherwise
-      redirectTo: '/'
+  constructor: ($stateProvider, $urlRouterProvider) ->
+    # For any unmatched url, redirect to /state1
+    $urlRouterProvider.otherwise "/#/" 
+    
+    $stateProvider 
+      .state 'index',
+        url: '/'
+        controller: 'mainController'
+        templateUrl: 'views/main.html'
+      .state 'about',
+        url: '/about'
+        controller: 'aboutController'
+        templateUrl: 'views/about.html'

@@ -7,10 +7,7 @@
  # # MainCtrl
  # Controller of the testappApp
 ###
-angular.module('testappApp')
-  .controller 'MainCtrl', ($scope) ->
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate'
-      'AngularJS'
-      'Karma'
-    ]
+
+class Main extends Controller
+	constructor: ->
+
