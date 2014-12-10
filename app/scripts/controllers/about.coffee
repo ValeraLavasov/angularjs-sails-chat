@@ -9,9 +9,9 @@
 ###
 
 class About extends Controller 
-	constructor: ->
-		@info = 
-		"""
-		What is used here:
+  constructor: ->
+    @info = 
+    """
+    What is used in this template (what you should know to be able develop ontop of this template):
 
-		"""
+    """
