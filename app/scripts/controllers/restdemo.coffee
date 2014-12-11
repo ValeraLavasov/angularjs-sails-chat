@@ -9,3 +9,14 @@ class Restdemo extends Controller
     Restangular.all('users').getList()
       .then (users)->
         self.users = users
+
+    users =  Restangular.all('users').getList().$object
+    @SetUser=(NewUser)->
+        Setting = {name:NewUser} 
+        users.post(Setting)
+
+    users =  Restangular.all('users').getList().$object
+    @Delete=(oldUs)->
+        oldUsname = Restangular.one('users',"oldUs").get().$object
+        oldUsname.remove()
+

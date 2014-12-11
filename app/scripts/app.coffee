@@ -49,6 +49,12 @@ class Routes extends Config
         controller: 'aboutController'
         templateUrl: 'views/about.html'
 
+      .state 'dialog',
+        url: '/diolog'
+        controller: 'dialogsController'
+        templateUrl: 'views/dialogs.html'
+
+
 
 
 # global configuration for Restangular
